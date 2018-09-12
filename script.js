@@ -83,3 +83,43 @@ var counter = function(arr){
 
 module.exports = counter; // exports the counter as a module and connects it the 'app.js' variable of counter
 */
+
+// Tutorial 7, Module Patterns
+
+/*
+
+
+
+*/
+
+
+var counter = function(arr){
+    return 'There are ' + arr.length + ' elements in this array';
+    
+};
+
+
+var adder = function(a,b){
+    return `The sum of the 2 numbers is $(a+b)`;// template strings.. 
+};
+
+var pi = 3.142;
+
+module.exports = { // stil doing the module exports but making more simplier to read
+    counter: counter,
+    adder: adder,
+    pi: pi
+}
+
+module.exports = counter;
+// ^ this has always been an empty object
+module.exports.counter = counter;
+module.exports.adder = counter;
+module.exports.pi = counter;
+// ^ this is exporting the variable you defined
+
+// Easier way to use the module-exports is by replacing the var in each defined variable and use the module export
+
+
+
+
