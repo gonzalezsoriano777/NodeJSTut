@@ -88,4 +88,23 @@ var readMe = fs.readFileSync('readMe.txt', 'utf8', function(err, data){
 
 */
 
+// Tutorial 10...
+
+// Tutorial 10...
+/*
+var fs = require('fs');
+
+fs.unlink('.stuff/writeMe.txt', function(){
+    fs.rmdir('stuff');
+});
+
+//fs.mkdirSync('stuff'); //make a directory using node
+//fs.rmdir('stuff'); // removes directory using node
+//////////////////////////////////////
+fs.mkdir('stuff', function(){
+    fs.readFile('readMe.txt', 'utd8', function(err, data){
+       fs.writeFile('.stuff/writeMe.txt', data); // Makes a file called writeMe.txt
+    });
+});
+*/
 
