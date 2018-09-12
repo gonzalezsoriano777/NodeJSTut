@@ -20,4 +20,21 @@ Make a node.js app
 
 // Tutorial 2 , Installing Node.js
 
-// Just showing how to install Node.js, and use it to open files from your documentary
+// Just showing how to install Node.js, and use it to open files from your documentary\
+
+// Turtorial 3, The v8 Engine
+
+/*
+
+ Js Engines, don't understand Js infact it take JS and converts it to something
+ More understandable for it, which is Machine Code
+ 
+*/ 
+
+// Understanding the process of v8 convertion
+/*
+
+Node.js is written in C++ ,its because it uses the v8 engine (one of js engines) which is actually written in C++ 
+ So that it can convert to the js engine and that converts it to machine code
+ 
+ */
