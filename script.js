@@ -38,3 +38,27 @@ Node.js is written in C++ ,its because it uses the v8 engine (one of js engines)
  So that it can convert to the js engine and that converts it to machine code
  
  */
+ 
+// Tutorial 4, Global Project
+
+/*
+ setTimeout(function(){
+    console.log('3 seconds have passed');
+}, 3000);
+*/ 
+
+
+/*
+
+var time = 0;
+
+var timer = setInterval(function(){ // Updates how many seconds have passed each time, 
+//and it keep running
+    time += 2;
+    console.log(time + ' seconds have passed');
+    if (time > 5){ // Represents that, once it passed 5 seconds it clear the interval and stops the loop
+        clearInterval(timer);
+    }
+}, 2000);
+
+*/
