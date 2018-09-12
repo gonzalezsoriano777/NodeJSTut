@@ -62,3 +62,13 @@ var timer = setInterval(function(){ // Updates how many seconds have passed each
 }, 2000);
 
 */
+
+
+// Tutorial 5, Function Expressions
+
+/*
+
+Explaining function expressions
+As well as show, how to move a expression to a recent fucntion(shown in the file, 'app.js')
+
+*/
