@@ -88,7 +88,7 @@ var readMe = fs.readFileSync('readMe.txt', 'utf8', function(err, data){
 
 */
 
-// Tutorial 10...
+
 
 // Tutorial 10...
 /*
@@ -107,4 +107,9 @@ fs.mkdir('stuff', function(){
     });
 });
 */
+
+// Tutorial 11...
+
+// Notes were taken in the script.js file
+
 

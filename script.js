@@ -183,6 +183,24 @@ Everything done app.js in this section
 
 */
 
+// Tutorial 11 , Clients and Servers
+
+
+//Notes
+/*
+
+Protocals
+A set of communications rules, that two sides agree to use when communicating
+
+Ports
+A Program running on a computer that can listen for requests sent to a particular port number
+
+Ex... An IP Address, 172.24.86.76:3000
+
+*/
+
+
+
 
 
 
