@@ -13,6 +13,7 @@ console.log(_filename);
 
 // Tutorial 5
 
+/*
 function callFunction(fun){
     fun();
 }
@@ -41,3 +42,14 @@ sayBye();
 
 
 callFunction(sayBye); // This variable 'sayBye' will be passed with the recent 'callFunction'.
+*/
+
+
+// Tutorial 6 ...
+
+/*
+var counter = require('./count'); // find the js file, and once use it as a variable it 
+//grabs the variable of counter in the 'script.js' and connects them
+
+console.log(counter(['shaun', 'crystal', 'ryu']));
+*/

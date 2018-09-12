@@ -72,3 +72,14 @@ Explaining function expressions
 As well as show, how to move a expression to a recent fucntion(shown in the file, 'app.js')
 
 */
+
+// Tutorial 6, Modules and Require()
+
+/*
+var counter = function(arr){
+    return 'There are ' + arr.length + ' elements in this array';
+};
+
+
+module.exports = counter; // exports the counter as a module and connects it the 'app.js' variable of counter
+*/
