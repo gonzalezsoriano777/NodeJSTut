@@ -112,4 +112,25 @@ fs.mkdir('stuff', function(){
 
 // Notes were taken in the script.js file
 
+// Tutorial 12...
+
+// How to create the server
+/*
+
+var http = require('http');
+
+var server = http.createServer(function(req, res){ // Takes to parameters (request and responce)
+     console.log('request was made: ' + req.url);   
+   res.writeHead(200, {'Content-Type': 'text/plain'});
+   res.end('Hey ninjas');
+   
+                                                   
+});
+
+
+server.listen(3000, '127.0.0.1'); // IP Address plus the 3000  calls the console
+console.log('yo dawgs, now listening to port 3000'); // this is how you set up a server in node.js
+
+*/
+
 
