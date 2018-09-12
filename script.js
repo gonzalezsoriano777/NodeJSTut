@@ -167,6 +167,16 @@ myEmitter.emit('someEvent', 'the event was emitted'); // This event is emmitted 
 
 */
 
+// Tutorial 9, Reading & Writing Files (fs)
+
+/*
+
+Everything done app.js in this section
+
+*/
+
+
+
 
 
 

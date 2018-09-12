@@ -69,3 +69,23 @@ console.log(stuff.adder(stuff.pi, 5)); // using the adder to add the pi and then
 
 // Script.js was used for this lesson
 
+// Tutorial 9...
+/*
+var fs = require('fs');
+
+var readMe = fs.readFileSync('readMe.txt', 'utf8', function(err, data){
+    fs.writeFile('writeMe.txt', data);
+}); // reads the file and stores it , This is all non-blocking code
+// If there mutilple request this goes much quicker
+
+
+// console.log('test');
+
+//console.log(readMe);
+
+// fs.writeFileSync('writeMe.txt', readMe); // Grab the file and move it towards the readMe
+
+
+*/
+
+
