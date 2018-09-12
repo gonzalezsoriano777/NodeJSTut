@@ -55,6 +55,7 @@ console.log(counter(['shaun', 'crystal', 'ryu']));
 */
 
 // Tutorial 7...
+/*
 var stuff = require('./stuff');
 
 
@@ -62,3 +63,9 @@ console.log(stuff.counter(['shaun', 'crystal', 'yuri'])); // calls the counter v
 console.log(stuff.adder(5,6)); // calls the adder variable
 
 console.log(stuff.adder(stuff.pi, 5)); // using the adder to add the pi and then calls the pi with the method made 'stuff'
+*/
+
+// Tutorial 8...
+
+// Script.js was used for this lesson
+

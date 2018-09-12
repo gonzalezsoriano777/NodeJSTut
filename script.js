@@ -88,11 +88,6 @@ module.exports = counter; // exports the counter as a module and connects it the
 
 /*
 
-
-
-*/
-
-
 var counter = function(arr){
     return 'There are ' + arr.length + ' elements in this array';
     
@@ -119,6 +114,58 @@ module.exports.pi = counter;
 // ^ this is exporting the variable you defined
 
 // Easier way to use the module-exports is by replacing the var in each defined variable and use the module export
+
+
+
+
+
+*/
+
+// Tutorial 8, The Node Event Emitter
+
+/*
+
+var events = require('events');
+var util = require('util');
+
+var Person = function(name){
+    this.name = name;
+}
+
+util.inherits(Person, events.EventEmitter);
+
+
+var james = new Person('james');
+var mary = new Person('mary');
+var ryu = new Person('ryu');
+
+var people = [james, mary, ryu];
+
+people.forEach(function(person){
+   person.on('speak', function(mssg){
+       console.log(person.name + ' said: ' + mssg);
+   });  // Takes whatever person object and attaching it the listener. 
+});
+
+
+
+james.emit('speak', 'hey dudes'); // using the variable james and make him speak and say 'hey dudes'
+ryu.emit('speak', 'I want a curry'); // ^ Same Process
+////////////////////////////////////
+
+
+element.on('click', function(){})
+
+var myEmitter = new events.EvenEmitter();
+
+myEmitter.on('someEvent', function(mssg){
+   console.log(mssg); });
+
+myEmitter.emit('someEvent', 'the event was emitted'); // This event is emmitted and the string is moved towards the function 
+//and it fires back to the console
+
+
+*/
 
 
 
