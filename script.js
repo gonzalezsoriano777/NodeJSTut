@@ -210,6 +210,42 @@ Status // how to browser is doing
 
 */
 
+// Tutorial 13, Streams and Buffers
+
+// Notes
+/*
+
+Buffers
+
+-Temporary Storage spot for a chunk of data that is being transferred from one place to another
+- The Buffer is filled with data, then passed along
+- Transfer small chunks of data at a time
+
+Stream 
+
+- Overall stream of data that flows overtime from one place to another
+-Can create streams in Node.js to transfer data
+-Increase Performance
+
+
+*/
+
+
+// Tutorial 14, Readable Streams
+
+/*
+
+Different Kind of streams
+
+-Writeable Streams - allow node.js to write data to astream
+
+-Readbable Streams - allow node.js to read data from a stream
+
+-Duplex - can read and write to a stream
+
+*/
+
+
 
 
 

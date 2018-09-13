@@ -134,3 +134,28 @@ console.log('yo dawgs, now listening to port 3000'); // this is how you set up a
 */
 
 
+// Tutorial 13...
+
+/*
+
+Took notes in the file script.js
+
+*/
+
+// Tutorial 14...
+
+/*
+
+var http =  require('http');
+var fs =require('fs');
+
+var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8') // Read the data small amount of a time, then buffer then that buffer it's gonna pass that data in chunks
+
+myReadStream.on('data', function(chunk){
+    console.log('new chunk recieved:');
+    console.log(chunk); //  reading the data, making sure its v8 stream and everytime there a chunk of data you are able to do something with it , everytime you get a small piece of data you can send it to the user
+    // using a writeable stream, so that you can send small chunk or a piece at a time to the client rather then wait for the whole thing to be sent.
+}) // read the file, then buffers, recognizes it and finds a solution
+
+*/
+
