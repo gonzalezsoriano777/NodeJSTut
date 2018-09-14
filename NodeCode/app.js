@@ -159,3 +159,24 @@ myReadStream.on('data', function(chunk){
 
 */
 
+// Tutorial 15...
+
+/*
+
+// Using Writeable Streams on this one
+
+var http =  require('http');
+var fs =require('fs');
+
+var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8'); // Splitting this file into chunks of data
+var myWriteStream = fs.createWriteStream(__dirname + '/writeMe.txt'); 
+
+
+var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8') // Read the data small amount of a time, then buffer then that buffer it's gonna pass that data in chunks
+
+myReadStream.on('data', function(chunk){
+    console.log('new chunk recieved:');
+    myWriteStream.write(chunk); // You write into the variable 'myWriteStream', the chunk of data you have 
+});
+
+*/

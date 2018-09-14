@@ -179,3 +179,11 @@ Different Kind of streams
 -Readbable Streams - allow node.js to read data from a stream
 -Duplex - can read and write to a stream
 */
+
+// Tutorial 15, Writeable Streams
+
+/*
+
+Codes and Notes were made app.js
+
+*/
