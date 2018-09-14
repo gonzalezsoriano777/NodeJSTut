@@ -187,3 +187,17 @@ Different Kind of streams
 Codes and Notes were made app.js
 
 */
+
+// Tutorial 16, Pipes
+
+// Notes
+/*
+
+Pipes
+
+-Takes data from a read stream and then pipe it to the write stream
+- In a way it moves it directly to where you want it to go
+
+*/
+
+

@@ -169,10 +169,12 @@ var http =  require('http');
 var fs =require('fs');
 
 var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8'); // Splitting this file into chunks of data
+// Read the data small amount of a time, then buffer then that buffer it's gonna pass that data in chunks
+
 var myWriteStream = fs.createWriteStream(__dirname + '/writeMe.txt'); 
 
 
-var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8') // Read the data small amount of a time, then buffer then that buffer it's gonna pass that data in chunks
+ 
 
 myReadStream.on('data', function(chunk){
     console.log('new chunk recieved:');
@@ -180,3 +182,48 @@ myReadStream.on('data', function(chunk){
 });
 
 */
+
+// Tutorial 16...
+
+/*
+
+// Using Pipes...
+
+
+
+
+
+var http =  require('http');
+var fs =require('fs');
+
+
+
+
+
+
+var server = http.createServer(function(req, res){ // Takes to parameters (request and responce)
+     console.log('request was made: ' + req.url);   
+   res.writeHead(200, {'Content-Type': 'text/plain'});
+   var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8'); // Splitting this file into chunks of data
+var myWriteStream = fs.createWriteStream(__dirname + '/writeMe.txt'); 
+
+
+var myReadStream = fs.createReadStream(__dirname + '/readMe.txt', 'utf8') // Read the data small amount of a time, then buffer then that buffer it's gonna pass that data in chunks
+// Reads the contents of the file (Overall)
+var myWriteStream = fs.createWriteStream(__dirname + '/writeMe.txt');
+
+// myReadStream.pipe(myWriteStream); //sends all the the data from ReadStream to the WriteStream
+myReadStream.pipe(res); 
+
+   res.end('Hey ninjas');
+   
+                                                   
+});
+
+
+server.listen(3000, '127.0.0.1'); // IP Address plus the 3000  calls the console
+console.log('yo dawgs, now listening to port 3000'); // this is how you set up a server in node.js
+
+
+*/
+
