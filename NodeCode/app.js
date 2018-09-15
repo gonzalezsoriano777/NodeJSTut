@@ -358,4 +358,31 @@ and the Command Prompt finds the package or files and installs them again
 
 */
 
+// Tutorial 22...
+
+/*
+
+var http =  require('http');
+var fs =require('fs');
+
+var server = http.createServer(function(req, res){ 
+     console.log('request was made: ' + req.url); // check the request of a specific url   
+    if(req.url === '/home' || req.url === '/'){
+        res.writeHead(200, {'Content-Type': 'text/html'});
+     res.createReadStream(__dirname + '/index.html').pipe(res);   
+    }else if(req.url === '/contact-us'){ // this is a more efficent way of working with Node.js, once changing something on the file it requests what was made and it and restarts the file like a robot knowing its role once its assigned
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        fs.createReadStream(__dirname + '/contact.html').pipe(res); // These 2 are for creating routes in whcih we can call in the search bar on the top of a browser
+    }else  if(req.url === '/api/ninjas'){
+        var ninjas = [{name: 'ryu', age: 29}, {name: 'yoshi', age: 32}];
+        res.writeHead(200, {'Content-Type': 'application/json'});
+        res.end(JSON.stringify(ninjas));
+    }else {
+         res.writeHead(200, {'Content-Type': 'text/html'});
+        fs.createReadStream(__dirname + '/404.html').pipe(res); 2
+    }
+        
+});
+
+*/
 

@@ -252,5 +252,16 @@ Everything was done in app.js
 
 */
 
+// Tutorial 22, Installing Nodemon
 
+/*
+
+Notes 
+
+Nodeman
+
+Monitor application files
+If anything was updated or changed in the files
+
+*/
 
