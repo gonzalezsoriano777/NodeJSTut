@@ -221,9 +221,30 @@ Code was done in app.js
 
 /*
 
+Everything done in app.js
+
+*/
+
+// Tutorial 20, The Node Package Manager
+
+/*
+
+Notes
+
+Essentially form a certain type of task within Node.js
+(The express package helps for routing and templating )
+
+We can load these packages "Node Package Manager" and use 
+their Functionality in your own code
+
+Express (Extra info)
+Once using "npm install express" in either your atom, c9, or command prompt
+Installs different modules so that express can work properly
 
 
 */
+
+
 
 
 
