@@ -323,3 +323,39 @@ Notes taken in script.js
 
 */
 
+
+
+// Tutorial 21...
+
+/*
+
+// This is all called from using npm init in the Command Prompt (which im using)
+{
+ "name": "node-js-playlist",
+ "version": "1.0.0",
+ "description": "a little test app",
+ "main": "app.js",
+ "scripts": {
+     "test": "echo \"Error: no test specified\" && exit 1"
+ },
+ "keywords": [
+     "fun"
+     "ninjas"
+     ],
+     "author": "me",
+     "license": "ISC"
+     "dependencies": {
+         "express": "^4.13.4"
+     }
+}
+
+// Cool Fact ...
+If you were to have 6 files of the Package.json 
+and send it to another to another developer, and if they wanted to install or reinstall all the 
+packages in the Package.json they can use "npm install"
+and the Command Prompt finds the package or files and installs them again
+
+
+*/
+
+

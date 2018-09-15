@@ -244,7 +244,13 @@ Installs different modules so that express can work properly
 
 */
 
+// Tutorial 21, The Package.json File
 
+/*
+
+Everything was done in app.js
+
+*/
 
 
 
