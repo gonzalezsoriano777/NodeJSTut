@@ -408,3 +408,28 @@ app.listen(3000); // We make a port that listens to 3000
 
 */
 
+// Tutorial 24...
+
+/*
+
+
+
+*/
+
+var express = require('express');
+
+var app = express(); 
+
+app.get('/', function(req, res){
+   res.send('this is the homepage'); 
+});
+
+app.get('/contact', function(req, res){
+   res.send('this is the contact page'); 
+});
+
+app.get('/profile/:id '/* can also  use a name of any sort and it still calls the same request*/, function(req, res){
+   res.send('You requested to see a profile with the id of ' + req.params.id); // What it does is make a url into a address and then use a request text to the browser and then stores it with the req.params.id into the port itself
+});
+
+app.listen(3000); 
