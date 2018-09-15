@@ -200,12 +200,22 @@ Pipes
 
 */
 
-// Tutorial 17, Seerving HTML Pages
+// Tutorial 17, Serving HTML Pages
 
 /*
 
-
+Code was improved in app.js..
 
 */
+
+// Tutorial 18, Serving JSON Data
+
+/*
+
+Code was done in app.js
+
+*/
+
+
 
 
