@@ -386,3 +386,25 @@ var server = http.createServer(function(req, res){
 
 */
 
+// Tutorial 23...
+
+/*
+
+var express = require('express');
+
+var app = express(); // call the variable and since its uesd the require method, we fire it as a function
+
+app.get('/', function(req, res){
+   res.send('this is the homepage'); // once using the word "home" it brings you to a page in which has the text for this
+});
+
+app.get('/', function(req, res){
+   res.send('this is the contact page'); // once using the word "contact" it brings you to a page in which has the text for this
+});
+
+app.listen(3000); // We make a port that listens to 3000
+
+
+
+*/
+

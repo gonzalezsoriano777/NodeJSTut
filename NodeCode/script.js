@@ -265,3 +265,27 @@ If anything was updated or changed in the files
 
 */
 
+// Tutorial 23, Introduction to Express
+
+/*
+
+HTTP methods
+
+GET
+Use a Url and make it into a address bar
+Responding to Requests.. for Get use app.get('route', fn)
+
+POST
+Post Data to a web server
+Responding to Requests.. for POST('route', fn)
+
+DELETE
+Delete Data
+Responding to Requests.. for DELETE app.delete('route', fn)
+
+PUT
+requests that the enclosed entity be stored under the supplied Request-URI( Already Existing resource )
+--Aren't using a responding to requests for PUT..
+
+*/
+
