@@ -289,3 +289,10 @@ requests that the enclosed entity be stored under the supplied Request-URI( Alre
 
 */
 
+// Tutorial 24, Express Route Params
+
+/*
+
+Everything is done in app.js
+
+*/
