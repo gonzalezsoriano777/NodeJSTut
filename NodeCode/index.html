@@ -17,11 +17,16 @@
      font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;
  }   
     
- p {
+ p, li {
      font-size: 16px; text-align: center;
  }   
     
-    
+h2 {
+   font-size: 30px; 
+   text-transform: uppercase; 
+   letter-spacing: 2px; 
+   text-align: center; 
+}    
     
     
     
@@ -51,12 +56,20 @@
 <p><strong>Job:</strong><%= data.age %></p>
 -->
 
-
-
-
-
-
-
+<!-- Tutorial 27
+<h1>Welcome to the profile of <%= person %></h1>
+<p><strong>Age: </strong><%= data.age %></p>
+<p><strong>Job: </strong><%= data.age %></p>
+<h2>Hobbies</h2>
+<ul>
+ -->   <% data.hobbies.forEach(fucntion(item){ %> <!-- importing some js connecting to app.js -->
+<!--    <li><%= item %></li>    
+        
+        
+<%  }); %>
+    
+</ul>
+-->
 
 
 

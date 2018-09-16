@@ -304,3 +304,11 @@ Using an Engine called ejs in the app.js
 
 
 */
+
+// Tutorial 26, Template Engines part 2
+
+/*
+
+Everything was done in app.js and index.html
+
+*/
