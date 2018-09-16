@@ -296,3 +296,11 @@ requests that the enclosed entity be stored under the supplied Request-URI( Alre
 Everything is done in app.js
 
 */
+
+// Tutorial 25, Template Engines
+
+/*
+Using an Engine called ejs in the app.js
+
+
+*/

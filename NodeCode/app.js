@@ -433,3 +433,38 @@ app.listen(3000);
 
 */
 
+// Tutorial 25...
+
+/*
+
+
+
+*/
+
+var express = require('express');
+
+var app = express(); 
+
+app.set('view engine', 'ejs'); // sets the engine to ejs
+
+app.get('/', function(req, res){
+   //res.send('this is the homepage');
+   res.sendFile(__dirname + '/index.html');
+});
+
+app.get('/contact', function(req, res){
+   // res.send('this is the contact page');
+   res.sendFile(__dirname + '/contact.html');
+});
+
+app.get('/profile/:name ', function(req, res){ // can also  use a name of any sort and it still calls the same request
+   
+   var data = {
+     age: 29,
+     job: 'ninja'
+   }; 
+   
+   res.render('profile', {person: req.params.name, data: data}); // places a name from the profile, and grabs it data that is used index.html
+});
+
+app.listen(3000);
