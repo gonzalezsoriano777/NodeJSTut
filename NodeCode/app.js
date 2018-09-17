@@ -424,6 +424,7 @@ app.get('/contact', function(req, res){
    res.send('this is the contact page'); 
 });
 
+app.listen(process.env.PORT, process.env.IP, 3000);
 app.get('/profile/:id ', function(req, res){ // can also  use a name of any sort and it still calls the same request
    res.send('You requested to see a profile with the id of ' + req.params.id); // What it does is make a url into a address and then use a request text to the browser and then stores it with the req.params.id into the port itself
 });
@@ -435,8 +436,8 @@ app.listen(3000);
 
 // Tutorial 25...
 
-/*
 
+/*
 
 var express = require('express');
 
@@ -454,6 +455,7 @@ app.get('/contact', function(req, res){
    res.sendFile(__dirname + '/contact.html');
 });
 
+server.listen(process.env.PORT, process.env.IP, 3000);
 app.get('/profile/:name ', function(req, res){ // can also  use a name of any sort and it still calls the same request
    
    var data = {
@@ -499,6 +501,43 @@ app.get('/profile/:name ', function(req, res){ // can also  use a name of any so
    
    res.render('profile', {person: req.params.name, data: data}); // places a name from the profile, and grabs it data that is used index.html
 });
+
+app.listen(3000);
+
+*/
+
+
+// Tutorial 27...
+
+/*
+
+var express = require('express');
+
+var app = express(); 
+
+app.set('view engine', 'ejs'); // sets the engine to ejs
+
+app.get('/', function(req, res){
+   //res.send('this is the homepage');
+   res.render('index');
+});
+
+app.get('/contact', function(req, res){
+   // res.send('this is the contact page');
+   res.render('contact'); 
+});
+
+app.get('/profile/:name ', function(req, res){ // can also  use a name of any sort and it still calls the same request
+   
+   var data = {
+     age: 29,
+     job: 'ninja',
+     hobbies: ['eating', 'fighting', 'fishing']
+   }; 
+   
+   res.render('profile', {person: req.params.name, data: data}); // places a name from the profile, and grabs it data that is used index.html
+});
+
 
 app.listen(3000);
 

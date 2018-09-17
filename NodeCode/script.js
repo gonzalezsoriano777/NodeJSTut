@@ -312,3 +312,11 @@ Using an Engine called ejs in the app.js
 Everything was done in app.js and index.html
 
 */
+
+// Tutorial 27, Partial Templates
+
+/*
+
+Everything was done in script.js
+
+*/
