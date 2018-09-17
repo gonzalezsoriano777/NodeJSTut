@@ -320,3 +320,12 @@ Everything was done in app.js and index.html
 Everything was done in script.js
 
 */
+
+
+// Tutorial 28, Middleware and Static Files
+
+/*
+
+Everything was coded out in app.js
+
+*/
