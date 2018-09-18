@@ -509,7 +509,7 @@ app.listen(process.env.PORT, process.env.IP);
 
 // Tutorial 27...
 
-
+/*
 
 var express = require('express');
 
@@ -540,7 +540,7 @@ app.get('/profile/:name', function(req, res){ // can also  use a name of any sor
 
 
 app.listen(process.env.PORT, process.env.IP);
-
+*/
 
 
 // Tutorial 28...
@@ -589,7 +589,7 @@ app.listen(3000);
 
 // Tutorial 29...
 
-/* 
+/*
 
 var express = require('express');
 
@@ -624,6 +624,11 @@ app.get('/profile/:name ', function(req, res){ // can also  use a name of any so
 app.listen(process.env.PORT, process.env.IP);
 
 */
+
+
+
+
+
 
 
 
