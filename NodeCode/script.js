@@ -249,7 +249,10 @@ Installs different modules so that express can work properly
 /*
 
 Everything was done in app.js
-
+ 
+ ejs is an html document but we can embedd javascript and data into it
+ 
+ 
 */
 
 // Tutorial 22, Installing Nodemon
@@ -329,3 +332,16 @@ Everything was done in script.js
 Everything was coded out in app.js
 
 */
+
+// Tutorial 29, Query Strings
+
+/*
+
+Query Strings
+
+-'mysite.com/blog/news?page=2'
+- Page = 2 this word is connected to the link above
+- 'mysite.com/contact?person=ryu&dept= marketing'
+- Parse the request, and pull out the data
+*/
+

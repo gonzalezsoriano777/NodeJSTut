@@ -473,8 +473,8 @@ app.listen(3000);
 
 // Tutorial 26... part2
 
-/*
 
+/*
 var express = require('express');
 
 var app = express(); 
@@ -491,7 +491,7 @@ app.get('/contact', function(req, res){
    res.sendFile(__dirname + '/contact.html');
 });
 
-app.get('/profile/:name ', function(req, res){ // can also  use a name of any sort and it still calls the same request
+app.get('/profile/:name', function(req, res){ // can also  use a name of any sort and it still calls the same request
    
    var data = {
      age: 29,
@@ -502,14 +502,14 @@ app.get('/profile/:name ', function(req, res){ // can also  use a name of any so
    res.render('profile', {person: req.params.name, data: data}); // places a name from the profile, and grabs it data that is used index.html
 });
 
-app.listen(3000);
+app.listen(process.env.PORT, process.env.IP);
 
 */
 
 
 // Tutorial 27...
 
-/*
+
 
 var express = require('express');
 
@@ -539,30 +539,26 @@ app.get('/profile/:name ', function(req, res){ // can also  use a name of any so
 });
 
 
-app.listen(3000);
+app.listen(process.env.PORT, process.env.IP);
 
-*/
+
 
 // Tutorial 28...
 
 
 /*
 
-
-
-*/
-
-
 var express = require('express');
 
 var app = express(); 
 
 app.set('view engine', 'ejs'); // sets the engine to ejs
-app.use('/assets' /*this middleware matches any url the user writes once adding '/'*/, express.static('stuff'))// function(req, res, next){
+app.use('/assets' , express.static('stuff'))// function(req, res, next){  //this middleware matches any url the user writes once adding '/'
 // even when you use a different expression such like 'stuff' it still defines the assets since you classified it from the beginning 
   
   // console.log(req.url);
   // next();   // being able to use more words to be added connected to the url   
+
 
 
 
@@ -588,3 +584,47 @@ app.get('/profile/:name ', function(req, res){ // can also  use a name of any so
 
 
 app.listen(3000);
+
+*/
+
+// Tutorial 29...
+
+/* 
+
+var express = require('express');
+
+var app = express(); 
+
+app.set('view engine', 'ejs'); // sets the engine to ejs
+app.use('/assets', express.static('stuff'));
+
+app.get('/', function(req, res){
+   //res.send('this is the homepage');
+   res.render('index');
+});
+
+app.get('/contact', function(req, res){
+   
+   //console.log(req.query);
+   res.render('contact', {qs: req.query}); 
+});
+
+app.get('/profile/:name ', function(req, res){ // can also  use a name of any sort and it still calls the same request
+   
+   var data = {
+     age: 29,
+     job: 'ninja',
+     hobbies: ['eating', 'fighting', 'fishing']
+   }; 
+   
+   res.render('profile', {person: req.params.name, data: data}); // places a name from the profile, and grabs it data that is used index.html
+});
+
+
+app.listen(process.env.PORT, process.env.IP);
+
+*/
+
+
+
+
