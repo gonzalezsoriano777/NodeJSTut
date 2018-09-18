@@ -1,57 +1,5 @@
 <!DOCTYPE html>
 <html>
-<<<<<<< HEAD
-<head>
-<style>
-    
-    body {
-        background : skyblue; font-family: verdana; color: #fff; padding: 30px;
-        
-    }
- 
- h1 {
-     font-size: 48px; text-transform: uppercase; letter-spacing: 2px; text-align: center;
- }   
-    
- p, li {
-     font-size: 16px; text-align: center;
- }   
-    
-h2 {
-   font-size: 30px; 
-   text-transform: uppercase; 
-   letter-spacing: 2px; 
-   text-align: center; 
-}    
-    
-    
- ul {
-     list-style-type: none;
-     padding: 0;
-     
- } 
-    
-    
-</style>    
-</head>
-<body>
-
-<h1>Welcome to the profile of <%= person %></h1>
-<p><strong>Age: </strong><%= data.age %></p>
-<p><strong>Job: </strong><%= data.job %></p>
-<h2>Hobbies</h2>
-<ul>
-  <% data.hobbies.forEach(function(item){ %> -->  <!-- importing some js connecting to app.js -->
-   <li><%= item %></li>    
-        
-        
-<%  }); %>
-    
-</ul>
-
-</body>
-</html>
-=======
 <head>    
 <style>
 
@@ -94,38 +42,22 @@ h2 {
 
        }
 
-   </style>    
-   </head>    
-   <body>
+</style>
+</head>
+</body>
 
-       
-    <% include partial/nav.ejs %>
-    <h1>Welcome to the profile of <%= person %></h1> <!--%= is ok for outputting data-->
+<h1>Welcome to the profile of <%= person %></h1>
+<p><strong>Age: </strong><%= data.age %></p>
+<p><strong>Job: </strong><%= data.job %></p>
+<h2>Hobbies</h2>
+<ul>
+  <% data.hobbies.forEach(function(item){ %> -->  <!-- importing some js connecting to app.js -->
+   <li><%= item %></li>    
+        
+        
+<%  }); %>
+    
+</ul>
 
-       <p><strong>Age: </strong><%= data.age %></p>
-
-       <p><strong>Job: </strong><%= data.job %></p>
-
-       <h2>Hobbies</h2>
-
-       <ul>
-
-          <% data.hobbies.forEach(function(item){ %>
-
-              <li><%= item %></li>
-
-         <% }); %>
-
-       </ul>
-
-   </body>
-
+</body>
 </html>
-
-
-
-
-
-
-
->>>>>>> lesson29
