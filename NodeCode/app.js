@@ -527,7 +527,7 @@ app.get('/contact', function(req, res){
    res.render('contact'); 
 });
 
-app.get('/profile/:name ', function(req, res){ // can also  use a name of any sort and it still calls the same request
+app.get('/profile/:name', function(req, res){ // can also  use a name of any sort and it still calls the same request
    
    var data = {
      age: 29,
