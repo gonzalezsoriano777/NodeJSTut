@@ -345,5 +345,16 @@ Query Strings
 - Parse the request, and pull out the data
 */
 
+// Tutorial 30, Handling POST Requests
+
+/*
+
+POST Requests method
+
+Post is a request method
+POST requests, ask the server to accept/store data which is enclosed in the body of the requests
+Often used when submitting forms
+
+*/
 
 

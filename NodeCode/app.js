@@ -625,9 +625,50 @@ app.listen(process.env.PORT, process.env.IP);
 
 */
 
+// Tutorial 30...
+
+/*
+
+var express = require('express');
+var bodyParser = require('body-parser'); 
+var app = express(); 
+
+var urlencodedParser = bodyParser.urlencoded({ extended: false });
+
+app.set('view engine', 'ejs'); // sets the engine to ejs
+app.use('/assets', express.static('stuff'));
+
+app.get('/', function(req, res){
+   //res.send('this is the homepage');
+   res.render('index');
+});
+
+app.get('/contact', function(req, res){ 
+   //console.log(req.query);
+   res.render('contact', {qs: req.query}); 
+});
+
+app.post('/contact', urlencodedParser, function(req, res){ // urlencodedParser is used to lanch the body-parser on the contact
+    console.log(req.body);
+    res.render('my-success', {data: req.body});
+});
+
+app.get('/profile/:name ', function(req, res){ // can also  use a name of any sort and it still calls the same request
+   
+   var data = {
+     age: 29,
+     job: 'ninja',
+     hobbies: ['eating', 'fighting', 'fishing']
+   }; 
+   
+   res.render('profile', {person: req.params.name, data: data}); // places a name from the profile, and grabs it data that is used index.html
+});
 
 
+app.listen(process.env.PORT, process.env.IP);
 
+
+*/ 
 
 
 
