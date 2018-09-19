@@ -357,4 +357,10 @@ Often used when submitting forms
 
 */
 
+// Tutorial 31 , Making a To-do app (part 1)
 
+/*
+
+Just started installing all the packages for the To-do list app
+
+*/

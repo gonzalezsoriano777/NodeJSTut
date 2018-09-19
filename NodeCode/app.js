@@ -671,6 +671,12 @@ app.listen(process.env.PORT, process.env.IP);
 */ 
 
 
+// Tutorial 31...
 
+/*
+
+Everything was done in script.js
+
+*/
 
 
