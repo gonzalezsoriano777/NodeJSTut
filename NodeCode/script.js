@@ -364,3 +364,21 @@ Often used when submitting forms
 Just started installing all the packages for the To-do list app
 
 */
+
+
+// Tutorial 32, Making a To-do app (part 2)
+
+/*
+
+MVC, Meaning
+
+Module
+Just data, can also be the user (here its our todo)
+
+Controller
+Bridges both the module and view
+grabs the data from the module and decide how the user can view the data
+
+view
+Is what we send to the user
+*/
