@@ -2,7 +2,24 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 
 // Connect to the database
+<<<<<<< HEAD
 mongoose.connect('mongodb://soriano:hector3463@ds111993.mlab.com:11993/todo');
+=======
+mongoose.connect('mongodb://soriano:hector3463@ds111993.mlab.com:11993/todo'); // connects to the database
+
+// Create a schema - this is like a blueprint
+var todoSchema = new mongoose.Schema({
+ item: String
+});
+
+
+var Todo = mongoose.model('Todo', todoSchema); // create a model and basing it off a schema
+var itemOne = Todo({item: 'buy flowers'}).save(function(err){
+  if (err) throw err; // make a function with a call back
+  console.log('item saved');
+});
+
+>>>>>>> lesson36
 
 var data = [{item: 'get milk'}, 
  {item: 'walk dog'},
