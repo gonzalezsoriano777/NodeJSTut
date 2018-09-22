@@ -4,12 +4,12 @@ $(document).ready(function(){
 
       var item = $('form input');
       var todo = {item: item.val()};
-
+  
       $.ajax({
         type: 'POST',
         url: '/todo',
         data: todo,
-        success: function(data){
+        success: function(data){ // grabs the updated data and cycle to the todo ejs file
           //do something with the data via front-end framework
           location.reload();
         }

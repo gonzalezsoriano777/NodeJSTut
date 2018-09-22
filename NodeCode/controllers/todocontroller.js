@@ -1,17 +1,29 @@
+var bodyParser = require('body-parser');
+
+var data = [{item: 'get milk'}, 
+ {item: 'walk dog'},
+ {item: 'kick some coding ass'}];
+ var urlencodedParser = bodyParser.urlencoded({extended: false});
+ 
+
 module.exports = function(app){ // passing the varaible of app here
  
  
- app.get('/todo', function(req, res){
-      res.render('todo');
+app.get('/todo', function(req, res){
+      res.render('todo', {todos: data}); // this is passed to the view folder
  });
    
-    app.get('/todo', function(req, res){
-      
+app.post('/todo', urlencodedParser, function(req, res){
+      data.push(req.body);// send this data back to the front end, and recieving back to json
+      res.json(data);
  });  
 
     
-app.delete('/todo', function(req, res){
-    
+app.delete('/todo/:item', function(req, res){
+ data = data.filter(function(todo){
+  return todo.item.replace(/ /g, '-') !== req.params.item;
+ })
+ res.json(data);
 });   
     
     
