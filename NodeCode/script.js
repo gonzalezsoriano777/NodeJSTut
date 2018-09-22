@@ -404,3 +404,19 @@ NoSQL Databases
 - Works really well with JS (and therefore Node.js)
 
 */
+
+// Tutorial 36, Making To-do App (part 5)
+
+/*
+
+Everything was done in the controller folder with the file 'todocontrollers.js'
+
+*/
+
+// Tutorial 37, Making To-do App (part 6)fnl
+
+/*
+
+
+
+*/
