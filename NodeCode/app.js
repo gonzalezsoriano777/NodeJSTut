@@ -1,5 +1,7 @@
-// Tutorial 35..
+// Tutorial 36...
 
-// Everything was done in script.js for notes
+/*
 
 
+
+*/
