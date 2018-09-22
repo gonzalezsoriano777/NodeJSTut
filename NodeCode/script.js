@@ -390,3 +390,17 @@ Is what we send to the user
 Everything was done in app.js
 
 */
+
+// Tutorial 34, Intro to NoSQL/ MongoDB
+
+/*
+
+Notes
+
+NoSQL Databases
+
+- Alternative to SQL databases
+- Stores documents(JSON) in a db, instead of tables with rows and columns
+- Works really well with JS (and therefore Node.js)
+
+*/
